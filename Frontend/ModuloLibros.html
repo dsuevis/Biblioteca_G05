@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <title>Mi Biblioteca</title>
+  </head>
+  <body>
+    <!--logos, título, menú-->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="img/LogoBiblioteca_Mesa de trabajo 1.png"
+              alt="Logo"
+              width="165"
+              height="50"
+              class="d-inline-block align-text-top"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./Inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre Nosotros</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <br />
+
+    <!--Formularios, Tablas-->
+    <main>
+        <Center><h1> Módulo de Libros</h1></Center>
+        <br/>         
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-sm-5 col-sm-4 themed-grid-col">   
+                    <h3>1. Datos básicos</h3>
+                    <form id="datosBasicosLibros" class="row g-3">
+                        <label for="tituloLibro">Título</label>
+                        <input type="text" id="tituloLibro" name="txtTitulo"  required placeholder="Nombre del libro"></input> 
+                        <div class="col-md-6">
+                        <label for="editorial">Editorial</label>
+                        <input type="text" id="editorial" name="txtEditorial" required placeholder="Nombre de la editorial"></input> 
+                        </div>
+                        <div class="col-md-6">
+                        <label>Tipo de libro</label>
+                        <select name="txtTipo" >
+                            <option value="1">Literatura</option>
+                            <option value="2">Científico</option>
+                            <option value="3">Ficción</option>
+                            <option value="4">Ensayo</option>
+                            <option value="5">Poético</option>   
+                            <option value="6">Monografía</option>                                                            
+                        </select> 
+                        </div>
+                            <div class="col-md-6">            
+                            <label for="nEjemplares">Número de ejemplares</label>
+                            <input type="number" id="nEjemplares" name="txtEjemplares"></input> 
+                            </div>
+                            <div class="col-md-6">
+                            <label for="disponibilidad">Disponibilidad</label>
+                            <input type="text" id="disponibilidad" name="txtDisponibilidad"></input> 
+                            </div>            
+                            <label for="ubicacion">Ubicación</label>
+                            <input type="text" id="ubicacion" name="txtUbicacion" required placeholder="Estante-Sección-número de libro"></input> 
+                            <br/>                                         
+                    </form>
+                    <br>
+                    <h3 class="my-4">2. Autor</h3>
+                    <form id="datosAutorLibros" class="row g-3">
+                        <label for="autorNombre">Nombres</label>
+                        <input type="text" id="autorNombre" name="txtAutornombre" maxlength="10" size="50" required placeholder="Nombre del autor"></input>            
+                        <br/> <br/>             
+                        <label for="autorApellido">Apellidos</label>
+                        <input type="text" id="autorApellido" name="txtAutorapellido" maxlength="10" size="50" required placeholder="Apellidos del autor"></input>
+                        <br/> <br/>
+                        <label for="nacionalidad">Nacionalidad</label>
+                        <input type="text" id="nacionalidad" name="txtNacionalidad" maxlength="10" size="30"></input>  
+                    
+                        <br/> <br/> 
+                        <div class="col-12">
+                        <input type="submit" value="Eliminar Autor" /> &nbsp; &nbsp; &nbsp; &nbsp; 
+                        <input type="submit" value="Agregar Nuevo Autor" /> &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="submit" value="Modificar Autor" /> 
+                        </div>
+                        
+                    </form>
+            
+                    <br/> <br/>
+                    <div class="table-responsive"> 
+                    <table class="table">
+                        <tr>
+                        <th>ID</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Nacionalidad</th>
+                        </tr>
+                        <tr>
+                        <td>1</td>
+                        <td>Gabriel</td>
+                        <td>Garcia Marquez</td>
+                        <td>Colombiana</td>
+                        </tr>
+                        <tr>
+                        <td>2</td>
+                        <td>Martino</td>
+                        <td>De la Cruz</td>
+                        <td>Mexicana</td>
+                        </tr>
+                    </table>
+                    </div>
+            
+                    <br/> <br/> 
+                    <input type="submit" value="Guardar Libro" /> &nbsp; &nbsp; &nbsp; &nbsp; 
+                    <input type="submit" value="Cancelar" /> 
+                </div>
+            <div class="col-1"></div>
+            <div class="col col-lg themed-grid-col">
+                
+                <div>
+                    <br/> <br/> <br/>
+                    <div class="col-12 text-align">
+                        <input type="submit" value="Mostrar Lista de libros" /> &nbsp; &nbsp; 
+                        <input type="submit" value="Actualizar libros" /> &nbsp; &nbsp;
+                        <input type="submit" value="Modificar libro" /> 
+                    </div>
+                    <br/>
+                
+                <div class="table-responsive"> 
+                    <table class="table">
+                        <tr>
+                        <th>ISBN</th>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Tipo</th>
+                        <th>Editorial</th>
+                        <th>No.ejemplares</th>
+                        <th>Ubicación</th>
+                        </tr>
+                        <tr>
+                        <td>1</td>
+                        <td>A través de mi ventana</td>
+                        <td>Garcia Marquez</td>
+                        <td>Literatura</td>
+                        <td>Santillana</td>
+                        <td>15</td>
+                        <td>EN58</td>
+                        </tr>
+                        <tr>
+                        <td>2</td>
+                        <td>Aliados</td>
+                        <td>MArtino de la cruz</td>
+                        <td>Literatura</td>
+                        <td>Eureca</td>
+                        <td>5</td>
+                        <td>HF70</td>
+                        </tr>
+                    </table>
+                    </div>
+
+            </div>
+        
+        </div>
+        </div>
+ 
+    </main>
+
+    <footer class="py-3 my-4 border-top">
+        <p class="text-center text-muted">
+          Todos los derechos reservados :: Misión Tic Grupo 8 :: Colombia 2022
+        </p>
+    </footer>
+</body>
+</html>
+
