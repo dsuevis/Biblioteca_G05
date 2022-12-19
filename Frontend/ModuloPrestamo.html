@@ -63,14 +63,9 @@
                 <div class="col-sm-5 col-sm-4 themed-grid-col">   
                     <h3>1. Datos de la Reserva</h3>
                     <form id="datosReserva" class="row g-3">
-                        <div class="col-md-3">
-                        <label for="isbnlibro">ISBN</label>
-                        <input type="text" id="isbnlibro" name="txtisbnlibro"></input> 
-                        </div>
-                    
-                        <label for="tituloLibro">Título</label>
-                        <input type="text" id="tituloLibro" name="txtTitulo"  required placeholder="Nombre del libro"></input>  
-                       
+                     
+                        <label for="idReserva">Id Reserva</label>
+                        <input type="text" id="idReserva" name="txtIdreserva"></input> 
                         <div class="col-md-6">
                             <label for="fechaReserva">Fecha de reserva</label>
                             <input type="date" id="fechaPrestamo" name="txtTitulo" required placeholder="Fecha de prestamo"></input>
@@ -88,6 +83,7 @@
                         </div>        
                             <br/>                                         
                     </form>
+                     
                     <br>
                     <h3 class="my-4">2. Datos del cliente</h3>
                     <form id="datosclientePrestamo" class="row g-3">
@@ -124,7 +120,8 @@
                         <input type="submit" value="Mostrar Lista de reservas" /> &nbsp; &nbsp; 
                         <input type="submit" value="Actualizar" /> &nbsp; &nbsp;
                         <input type="submit" value="Modificar" />&nbsp; &nbsp;
-                        <input type="submit" value="Eliminar" /> 
+                        <input type="submit" value="Eliminar" /> &nbsp; &nbsp;
+                        <input type="submit" value="Buscar" />
                     </div>
                     <br/>
                 
