@@ -19,8 +19,8 @@ public class Author implements Serializable {
     private String nationality;
 
     //Make inverse relation with book table
-    @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "authorFK")
-    @JsonIgnoreProperties("authorFK")
+    @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "author")
+    @JsonIgnoreProperties("author")
     private List<Book> books;
 
     // ============ Getters and Setters ============ //

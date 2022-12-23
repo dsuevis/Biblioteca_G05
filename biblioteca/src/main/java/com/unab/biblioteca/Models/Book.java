@@ -24,7 +24,7 @@ public class Book implements Serializable {
     @ManyToOne
     @JoinColumn(name="id")
     @JsonIgnoreProperties("books")
-    private Author AuthorFK;
+    private Author author;
 
     //Make main definition for n to n relation between book and LoanReturns
     @ManyToMany
@@ -129,16 +129,16 @@ public class Book implements Serializable {
      * This method returns the book Author
      * @return book Author
      */
-    public Author getAuthorFK() {
-        return AuthorFK;
+    public Author getAuthor() {
+        return author;
     }
 
     /**
      * This method sets a new value for the book Author
-     * @param AuthorFK
+     * @param author
      */
-    public void setAuthorFK(Author AuthorFK) {
-        this.AuthorFK = AuthorFK;
+    public void setAuthor(Author Author) {
+        this.author = Author;
     }
 
     /**
