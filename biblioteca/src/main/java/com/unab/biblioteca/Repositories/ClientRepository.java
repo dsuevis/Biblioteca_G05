@@ -24,7 +24,7 @@ public class ClientRepository {
     }
 
     //Función para buscar por código
-    public Optional<Client> getCliente (int idCliente){
+    public Optional<Client> getClient (int idCliente){
         return clientCrudRepository.findById(idCliente);
     }
     //Función para guardar 

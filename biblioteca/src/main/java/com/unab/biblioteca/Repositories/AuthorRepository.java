@@ -20,7 +20,7 @@ public class AuthorRepository {
     }
 
     //Función para buscar por código
-    public Optional<Author> getBook (int idAuthor){
+    public Optional<Author> getAuthor (int idAuthor){
         return authorCrudRepository.findById(idAuthor);
     }
     //Función para guardar 

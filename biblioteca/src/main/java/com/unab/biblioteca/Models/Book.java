@@ -65,7 +65,7 @@ public class Book implements Serializable {
      * This method returns the book register date
      * @return book type
      */
-    public String gettype() {
+    public String getType() {
         return type;
     }
 
@@ -73,7 +73,7 @@ public class Book implements Serializable {
      * This method sets a new value for the book register date
      * @param registerDate
      */
-    public void settype (String type) {
+    public void setType (String type) {
         this.type = type;
     }
 
@@ -81,7 +81,7 @@ public class Book implements Serializable {
      * This method returns the book editorial
      * @return book editorial
      */
-    public String geteditorial() {
+    public String getEditorial() {
         return editorial;
     }
 
@@ -89,7 +89,7 @@ public class Book implements Serializable {
      * This method sets a new value for the book editorial
      * @param editorial
      */
-    public void seteditorial(String editorial) {
+    public void setEditorial(String editorial) {
         this.editorial = editorial;
     }
 
@@ -113,7 +113,7 @@ public class Book implements Serializable {
      * This method returns the book Location
      * @return book Location
      */
-    public String getlocation() {
+    public String getLocation() {
         return location;
     }
 
@@ -121,7 +121,7 @@ public class Book implements Serializable {
      * This method sets a new value for the book location
      * @param location
      */
-    public void setlocation(String location) {
+    public void setLocation(String location) {
         this.location = location;
     }
 

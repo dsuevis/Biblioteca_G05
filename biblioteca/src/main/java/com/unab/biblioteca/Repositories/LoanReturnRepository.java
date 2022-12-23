@@ -20,7 +20,7 @@ public class LoanReturnRepository {
     }
 
     //Función para buscar por código
-    public Optional<LoanReturns> getBook (int idPrestamos){
+    public Optional<LoanReturns> getLoanReturn (int idPrestamos){
         return loanReturnCrudRepository.findById(idPrestamos);
     }
     //Función para guardar 

@@ -21,7 +21,7 @@ public class EmployeeRepository {
     }
 
     //Función para buscar por código
-    public Optional<Employee> getBook (int idEmpleado){
+    public Optional<Employee> getEmployee (int idEmpleado){
         return employeeCrudRepository.findById(idEmpleado);
     }
     //Función para guardar 
